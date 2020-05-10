@@ -64,4 +64,12 @@ public class Log {
         }
         return threadName;
     }
+
+    public static void exampleStart() {
+        startTime = System.currentTimeMillis();
+    }
+
+    public static void exampleComplete() {
+        System.out.println("-----------------------");
+    }
 }
