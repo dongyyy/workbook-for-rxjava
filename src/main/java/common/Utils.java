@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class Utils {
 
+    private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
     public static void exampleStart() {
         Log.exampleStart();
     }
@@ -26,5 +28,9 @@ public class Utils {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String numberToAlphabet(Integer x) {
+        return Character.toString(ALPHABET.charAt((int) x % ALPHABET.length()));
     }
 }
